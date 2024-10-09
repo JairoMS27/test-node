@@ -1,20 +1,20 @@
 {
-  "name": "n8n-nodes-<...>",
-  "version": "0.1.0",
-  "description": "",
-  "keywords": [
-    "n8n-community-node-package"
-  ],
+	"name": "n8n-nodes-nasapics",
+	"version": "0.1.0",
+	"description": "n8n node to call NASA's APOD and Mars Rover Photo services.",
+	"keywords": [
+		"n8n-community-node-package"
+	],
   "license": "MIT",
-  "homepage": "",
-  "author": {
-    "name": "",
-    "email": ""
-  },
+	"homepage": "https://n8n.io",
+	"author": {
+		"name": "Test",
+		"email": "test@example.com"
+	},
   "repository": {
-    "type": "git",
-    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
-  },
+		"type": "git",
+		"url": "git+https://github.com/JairoMS27/websocket-node"
+	},
   "engines": {
     "node": ">=18.10",
     "pnpm": ">=9.1"
@@ -36,12 +36,10 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "credentials": [
-      "dist/credentials/ExampleCredentialsApi.credentials.js",
-      "dist/credentials/HttpBinApi.credentials.js"
+      "dist/credentials/NasaPicsApi.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/ExampleNode/ExampleNode.node.js",
-      "dist/nodes/HttpBin/HttpBin.node.js"
+      "dist/nodes/NasaPics/NasaPics.node.js"
     ]
   },
   "devDependencies": {
